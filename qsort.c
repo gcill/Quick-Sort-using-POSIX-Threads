@@ -258,7 +258,6 @@ int main(int argc, char *argv[])
      * Populate the array with random double numbers 
      */
     for (i = 0; i < MAXLEN; i++)
-        buf[i] = genrand_int31();
 
     /*
      * Initialize and set thread detached attribute 
