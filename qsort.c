@@ -21,9 +21,9 @@
 //double buf[MAXLEN];             // Array to be sorted
 double *buf;
 
-int thread_count = 1;           // Thread Counts to get the log2N
+int thread_count = 4;           // Thread Counts to get the log2N
                                         // depth correct
-int real_thread_count = 1;      // Actual threads spawned
+int real_thread_count = 4;      // Actual threads spawned
 
 /*
  * Type defintion for Wirth Median 
