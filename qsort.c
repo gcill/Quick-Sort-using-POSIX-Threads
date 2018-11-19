@@ -11,7 +11,7 @@
 #include <pthread.h>
 
 #define MAXLEN 		100000000       // Max length of array to sort
-#define MAXDEPTH	6       		// Recursion Tree Depth
+#define MAXDEPTH	2       		// Recursion Tree Depth
 
 /*
  * Wirth Macro 
