@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-#define MAXLEN 		100000000       // Max length of array to sort
+#define MAXLEN 		200000000       // Max length of array to sort
 #define MAXDEPTH	6       		// Recursion Tree Depth
 
 /*
