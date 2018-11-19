@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-#define MAXLEN 		300000000       // Max length of array to sort
+#define MAXLEN 		100000000       // Max length of array to sort
 #define MAXDEPTH	6       		// Recursion Tree Depth
 
 /*
@@ -21,9 +21,9 @@
 //double buf[MAXLEN];             // Array to be sorted
 double *buf;
 
-int thread_count = 4;           // Thread Counts to get the log2N
+int thread_count = 1;           // Thread Counts to get the log2N
                                         // depth correct
-int real_thread_count = 4;      // Actual threads spawned
+int real_thread_count = 1;      // Actual threads spawned
 
 /*
  * Type defintion for Wirth Median 
@@ -292,7 +292,7 @@ int main(int argc, char *argv[])
         ("Total Actual Thread Count = <%d>, Recursion Tree Branches = <%d>\n",
          real_thread_count, thread_count);
 
-    printf("After\n");
+    printf("\n");
     (MAXLEN <= 100) && (print(), 0);    // Print out only to test 
     pthread_mutex_destroy(&mutexthread);
     pthread_attr_destroy(&attr);
